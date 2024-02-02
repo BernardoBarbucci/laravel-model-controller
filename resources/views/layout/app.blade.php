@@ -10,10 +10,14 @@
 
 </head>
 <body>
+    @include('partials.header')
+
     <main>
-        <h1>
-            Enjoy Laravel!
-        </h1>
+        @yield('main-content')
     </main>
+
+    @include('partials.footer')
+
+    @yield('script-content')
 </body>
 </html>
