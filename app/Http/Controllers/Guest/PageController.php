@@ -15,6 +15,9 @@ class PageController extends Controller
     {
         $movies = Movie::all();
 
+        // dd($movies);
+        // check per vedere se movies viene mostrato
+
         return view('admin.movie.index', compact('movies'));
         // crea array associativo ['movies => $movies']
     }
