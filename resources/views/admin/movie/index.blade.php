@@ -1,10 +1,10 @@
 @extends('layout.app')
 
 @section('main-content')
-    <section class="container-fluid py-5 bg-warning border border-primary">
-        <div class="text-center mb-5"> 
+    <section class="container-fluid py-3 bg-warning">
+        <div class="text-center mb-3"> 
             <h1>
-                Movie content 
+                Movies list 
             </h1>
         </div>
 
@@ -14,7 +14,7 @@
                 
                 @forelse ($movies as $movie)
                     <div class="card m-2" style="width: 18rem;">
-                        <div class="card-header text-center">
+                        <div class="card-header text-center bg-secondary fw-bold">
                             {{ $movie->title }}
                         </div>
                         <ul class="list-group list-group-flush">
